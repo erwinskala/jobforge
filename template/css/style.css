@@ -51,7 +51,7 @@ footer a{
      position: relative; /* Даем возможность делать позиционирование, внутри данного элемента */
      /* Все что выходит за пределы — скрываем */
      overflow: hidden; 
-     width: 144px; /* Задаем ширину кнопки выбора файла */
+     width: 149px; /* Задаем ширину кнопки выбора файла */
      height: 20px; /* Задаем высоту кнопки выбора файла */
      background: #6da047;
      border-radius: 3px;
@@ -84,4 +84,8 @@ footer a{
 }
 #file-name{
 	color: gray;
+}
+
+input[type="text"], input[type="password"]{
+	padding: 10px 0 10px 5px;
 }
