@@ -82,3 +82,6 @@ footer a{
 	width: 150px;
 	height: 150px;
 }
+#file-name{
+	color: gray;
+}
