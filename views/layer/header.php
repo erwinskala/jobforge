@@ -41,5 +41,6 @@ var logreg = <?=$vars["VAL_LOGREQ"];?>;
 	<div id="VAL_PASMAXLEN" class="hid"><?= $lang->get('VAL_PASMAXLEN');?></div>
 	<div id="VAL_MAIL_TRUE" class="hid"><?= $lang->get('VAL_MAIL_TRUE');?></div>
 	<div id="VAL_MAIL_ENTER" class="hid"><?= $lang->get('VAL_MAIL_ENTER');?></div>
+	<div id="NAME_FILE" class="hid"><?= $lang->get('NAME_FILE');?></div>
 
 	<footer><a href="/"><?= $lang->get('TO_MAIN');?></a></footer>

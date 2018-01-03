@@ -26,10 +26,11 @@
                             <input type="password" name="password" placeholder="<?= $lang->get('LABEL_PASSWORD');?>" value="<?php echo $password; ?>"/><br/><br/>
                             <div class="file-upload">
                                 <label>
-                                <input type="file" name="image">
+                                <input type="file" name="image" onchange="getFileName ();" id="uploaded-file">
                                 <span><?= $lang->get('LABEL_FILE');?></span>
                                 </label>
                             </div>
+                            <div id="file-name"></div>
                             <br/><br/>
                             <input type="submit" name="submit" class="btn btn-default" value="<?= $lang->get('REGIST');?>" />
                         </form>

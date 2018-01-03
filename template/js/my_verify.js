@@ -1,6 +1,10 @@
 
-// var urls = <?= $_SERVER['HTTP_HOST']."/languages/js_lang.php"; ?>;
-
+function getFileName () {
+// Получаем имя загружаемого файла по id
+var file = document.getElementById ('uploaded-file').value;
+// file = file.replace (/\\/g, /).split ('/').pop ();
+document.getElementById('file-name').innerHTML = $("#NAME_FILE").text()+" "+ file;
+}
 
 $(document).ready(function(){
 
@@ -54,3 +58,5 @@ $(document).ready(function(){
 
     });
 });
+
+
