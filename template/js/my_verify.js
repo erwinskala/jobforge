@@ -2,8 +2,17 @@
 function getFileName () {
 // Получаем имя загружаемого файла по id
 var file = document.getElementById ('uploaded-file').value;
-// file = file.replace (/\\/g, /).split ('/').pop ();
-document.getElementById('file-name').innerHTML = $("#NAME_FILE").text()+" "+ file;
+
+
+if (file.lastIndexOf('\\')) {
+        var i = file.lastIndexOf('\\') + 1;
+    }
+    else {
+        var i = file.lastIndexOf('/') + 1;
+    }						
+    var filename = file.slice(i);
+
+document.getElementById('file-name').innerHTML = $("#NAME_FILE").text()+" "+ filename;
 }
 
 $(document).ready(function(){
